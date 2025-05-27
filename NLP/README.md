@@ -32,14 +32,12 @@ class FakeNewsLSTM(nn.Module):
 
 This project uses a simple LSTM-based neural network for binary text classification.
 
-### Architecture:
+### Architecture
 - **Input:** Word embeddings (pretrained or learned)
 - **Model:** `nn.LSTM` from PyTorch
 - **Hidden Layer:** Single LSTM layer
 - **Output Layer:** Fully connected layer for binary classification
 - **Output:** Label — `0` (Real) or `1` (Fake)
-
-The model processes each headline as a padded and tokenized sequence of word embeddings and outputs a prediction on whether it is real or fake news.
 
 ---
 
@@ -47,14 +45,14 @@ The model processes each headline as a padded and tokenized sequence of word emb
 
 **banFakeNews Dataset** – A Bengali fake news classification dataset.
 
-### Contains:
+### Contains
 - News headlines  
 - Labels: `0` (Real), `1` (Fake)
 
-### Preprocessing:
+### Preprocessing
 - Tokenization  
 - Padding  
-- Word embedding (can use pretrained vectors)
+- Word embedding (pretrained or learned)
 
 ---
 
@@ -67,7 +65,7 @@ The model processes each headline as a padded and tokenized sequence of word emb
 | Precision  | XX%   |
 | Recall     | XX%   |
 
-> *Fill in your real metrics after training.*
+> Fill in your real metrics after training.
 
 ---
 
@@ -77,6 +75,7 @@ The model processes each headline as a padded and tokenized sequence of word emb
    ```bash
    git clone https://github.com/YOUR_USERNAME/low_resource_nlp.git
    cd low_resource_nlp
+
 
 
 2. Install Dependencies
