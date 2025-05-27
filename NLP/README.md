@@ -27,7 +27,9 @@ class FakeNewsLSTM(nn.Module):
         return final_out
 # 🧠 Fake News Detection in Bengali using LSTM
 
+
 ## 📌 Model Details
+
 
 - **Input:** Word embeddings (pretrained or learned)  
 - **Hidden Layer:** LSTM  
@@ -35,9 +37,12 @@ class FakeNewsLSTM(nn.Module):
 
 ## 📂 Dataset
 
+
 **banFakeNews Dataset** – A Bengali fake news classification dataset.
 
 ### Contains:
+
+
 - News headlines  
 - Labels: `0` (Real), `1` (Fake)  
 - Preprocessing steps include:
@@ -46,6 +51,8 @@ class FakeNewsLSTM(nn.Module):
   - Word embedding  
 
 ## 📊 Results
+
+
 
 | Metric     | Score |
 |------------|-------|
@@ -57,6 +64,7 @@ class FakeNewsLSTM(nn.Module):
 *Fill in your real metrics after model training.*
 
 ## 🚀 Running the Project
+
 
 1. **Clone the Repository**
    ```bash
@@ -73,25 +81,26 @@ class FakeNewsLSTM(nn.Module):
 **💻 Streamlit App (Local testing):**
    streamlit run app.py
 
-**💡 Future Plans**
+### **💡 Future Plans**
    Train with transformers (e.g., IndicBERT, mBERT)
    Augment dataset with translated or synthetic examples
    Try transfer learning or fine-tuning approaches
    Deploy fully on Hugging Face with GPU support
 
-**Tools & Frameworks**
+
+###  **Tools & Frameworks**
   PyTorch
   Streamlit
   Kaggle
   Python NLP Libraries (NLTK, Scikit-learn, etc.)
 
-🙋 Author
+###  🙋 Author
 👤 Jobin-Sabu
 
 Pre Final-year undergraduate with deep interest in NLP & AI research
 Actively experimenting with low-resource language problems and democratizing AI access
 
-📜 License
+###  📜 License
 Apache License 2.0
 
 Licensed under the Apache License, Version 2.0 (the "License");
