@@ -41,7 +41,7 @@ This project uses a simple LSTM-based neural network for binary text classificat
 
 ---
 
-## 📂 Dataset
+## 📂 **Dataset**
 
 **banFakeNews Dataset** – A Bengali fake news classification dataset.
 
