@@ -28,26 +28,37 @@ class FakeNewsLSTM(nn.Module):
 # 🧠 Fake News Detection in Bengali using LSTM
 
 
-### **📌 Model Details**
+## 📌 Model Details
 
-- **Input:** Word embeddings (pretrained or learned)  
-- **Hidden Layer:** LSTM  
-- **Output:** Binary label (Real or Fake)  
+This project uses a simple LSTM-based neural network for binary text classification.
 
-### **📂 Dataset**
+### Architecture:
+- **Input:** Word embeddings (pretrained or learned)
+- **Model:** `nn.LSTM` from PyTorch
+- **Hidden Layer:** Single LSTM layer
+- **Output Layer:** Fully connected layer for binary classification
+- **Output:** Label — `0` (Real) or `1` (Fake)
+
+The model processes each headline as a padded and tokenized sequence of word embeddings and outputs a prediction on whether it is real or fake news.
+
+---
+
+## 📂 Dataset
 
 **banFakeNews Dataset** – A Bengali fake news classification dataset.
 
-### **Contains:**
-
+### Contains:
 - News headlines  
-- Labels: `0` (Real), `1` (Fake)  
-- Preprocessing steps include:
-  - Tokenization  
-  - Padding  
-  - Word embedding  
+- Labels: `0` (Real), `1` (Fake)
 
-### **📊 Results**
+### Preprocessing:
+- Tokenization  
+- Padding  
+- Word embedding (can use pretrained vectors)
+
+---
+
+## 📊 Results
 
 | Metric     | Score |
 |------------|-------|
@@ -56,9 +67,11 @@ class FakeNewsLSTM(nn.Module):
 | Precision  | XX%   |
 | Recall     | XX%   |
 
-*Fill in your real metrics after model training.*
+> *Fill in your real metrics after training.*
 
-### **🚀 Running the Project**
+---
+
+## 🚀 Running the Project
 
 1. **Clone the Repository**
    ```bash
