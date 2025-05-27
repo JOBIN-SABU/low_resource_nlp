@@ -25,37 +25,41 @@ class FakeNewsLSTM(nn.Module):
         lstm_out, _ = self.lstm(x.unsqueeze(1))
         final_out = self.fc(lstm_out[:, -1, :])
         return final_out
+# 🧠 Fake News Detection in Bengali using LSTM
 
-##  Model detail
+## 📌 Model Details
 
-Input: Word embeddings (pretrained or learned)
+- **Input:** Word embeddings (pretrained or learned)  
+- **Hidden Layer:** LSTM  
+- **Output:** Binary label (Real or Fake)  
 
-Hidden Layer: LSTM
+## 📂 Dataset
 
-Output: Binary label (Real or Fake)
+**banFakeNews Dataset** – A Bengali fake news classification dataset.
 
-**##Dataset**
-banFakeNews Dataset – A Bengali fake news classification dataset.
+### Contains:
+- News headlines  
+- Labels: `0` (Real), `1` (Fake)  
+- Preprocessing steps include:
+  - Tokenization  
+  - Padding  
+  - Word embedding  
 
-**##Contains##:**
-News headlines
-Labels: 0 (Real), 1 (Fake)
-Preprocessing steps include:
-Tokenization
-Padding
-Word embedding
+## 📊 Results
 
-**📊 Results**
-     Metric	Score
-     Accuracy	XX%
-     F1 Score	XX%
-     Precision	XX%
-     Recall	XX%
+| Metric     | Score |
+|------------|-------|
+| Accuracy   | XX%   |
+| F1 Score   | XX%   |
+| Precision  | XX%   |
+| Recall     | XX%   |
 
-Fill in your real metrics after model training.
+*Fill in your real metrics after model training.*
 
-**🚀 Running the Project**
-1. Clone the Repository
+## 🚀 Running the Project
+
+1. **Clone the Repository**
+   ```bash
    git clone https://github.com/YOUR_USERNAME/low_resource_nlp.git
    cd low_resource_nlp
 2. Install Dependencies
