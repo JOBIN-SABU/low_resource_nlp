@@ -28,20 +28,17 @@ class FakeNewsLSTM(nn.Module):
 # 🧠 Fake News Detection in Bengali using LSTM
 
 
-## 📌 Model Details
-
+### **📌 Model Details**
 
 - **Input:** Word embeddings (pretrained or learned)  
 - **Hidden Layer:** LSTM  
 - **Output:** Binary label (Real or Fake)  
 
-## 📂 Dataset
-
+### **📂 Dataset**
 
 **banFakeNews Dataset** – A Bengali fake news classification dataset.
 
-### Contains:
-
+### **Contains:**
 
 - News headlines  
 - Labels: `0` (Real), `1` (Fake)  
@@ -50,9 +47,7 @@ class FakeNewsLSTM(nn.Module):
   - Padding  
   - Word embedding  
 
-## 📊 Results
-
-
+### **📊 Results**
 
 | Metric     | Score |
 |------------|-------|
@@ -63,13 +58,14 @@ class FakeNewsLSTM(nn.Module):
 
 *Fill in your real metrics after model training.*
 
-## 🚀 Running the Project
-
+### **🚀 Running the Project**
 
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/YOUR_USERNAME/low_resource_nlp.git
    cd low_resource_nlp
+
+
 2. Install Dependencies
    pip install -r requirements.txt
 3. Train the Model
@@ -100,7 +96,8 @@ class FakeNewsLSTM(nn.Module):
 Pre Final-year undergraduate with deep interest in NLP & AI research
 Actively experimenting with low-resource language problems and democratizing AI access
 
-###  📜 License
+###📜 License
+
 Apache License 2.0
 
 Licensed under the Apache License, Version 2.0 (the "License");
