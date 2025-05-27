@@ -26,6 +26,8 @@ class FakeNewsLSTM(nn.Module):
         final_out = self.fc(lstm_out[:, -1, :])
         return final_out
 
+##  Model detail
+
 Input: Word embeddings (pretrained or learned)
 
 Hidden Layer: LSTM
